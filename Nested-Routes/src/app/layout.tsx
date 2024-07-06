@@ -17,10 +17,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
-        <header>My App Header</header>
-        <main>{children}</main>
-        <footer>My App Footer</footer>
+        <div className="my-10">
+          <header>
+            <nav>
+              <a className="bg-cyan-500 m-4 p-1 border-r-2" href="/">
+                Home
+              </a>
+              <a className="bg-cyan-500 mr-7 p-1 border-r-2" href="/dashboard">
+                Dashboard
+              </a>
+              <span> ----Root Layout</span>
+            </nav>
+          </header>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
