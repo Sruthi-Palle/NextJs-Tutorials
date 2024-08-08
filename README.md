@@ -7,3 +7,7 @@
 
 3) How to Implement Nested Routes with App Router in Next.js
       https://sruthipalle.hashnode.dev/how-to-implement-nested-routes-with-app-router-in-nextjs
+
+4) How to Implement Dynamic Routes with App Router in Next.js
+      https://sruthipalle.hashnode.dev/guide-to-dynamic-routing-in-nextjs-14-using-app-router
+
