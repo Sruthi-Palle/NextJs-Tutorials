@@ -26,6 +26,9 @@ export default function RootLayout({
               <a className="bg-cyan-500 mr-7 p-1 border-r-2" href="/dashboard">
                 Dashboard
               </a>
+              <a className="bg-cyan-500 mr-7 p-1 border-r-2" href="/blog">
+                Blog
+              </a>
               <span> ----Root Layout</span>
             </nav>
           </header>

@@ -1,6 +1,12 @@
 import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI;
+console.log(MONGODB_URI);
+if (!MONGODB_URI) {
+  throw new Error(
+    "Please define the MONGODB_URI environment variable inside .env.local"
+  );
+}
 
 const connect = async () => {
   const connectionState = mongoose.connection.readyState;
@@ -18,6 +24,7 @@ const connect = async () => {
       dbName: "next14restapi",
       bufferCommands: true,
     });
+    console.log("connected by connect");
   } catch (err: any) {
     console.log(err);
     throw new Error(err);
